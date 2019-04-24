@@ -13,9 +13,7 @@ class Character:
     def attack(self,opponent): 
         if opponent.culture is 'Zombie':
             print('Zombies cannot die, the %s does %d damage, but the zombie is still alive!' % (self.culture,self.power))
-
         else:
-
             opponent.health = opponent.health - self.power
             print("The %s does %d damage to the %s." % (self.culture,self.power,opponent.culture))
 
